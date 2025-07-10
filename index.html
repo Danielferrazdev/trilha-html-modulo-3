@@ -1,44 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estilos de músicas para YouTube</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-    <div>   
-        <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
+  <!-- Âncora para voltar ao topo -->
+  <a id="topo"></a>
+
+  <header role="banner">
+    <figure class="logo">
+        <img src="https://pt.wikipedia.org/static/images/icons/wikipedia.png" width="50" alt="Globo do logo da Wikipedia" />
+        <div class="logo-text">
+          <img src="https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg" width="100" alt="Wikipedia" />
+          <figcaption>versão redesenhada para estudos</figcaption>
         </div>
-    </div>
+      </figure>
+  </header>
 
-    <div class="bar"></div>
+  <nav class="bar" aria-label="Navegação superior">
+    <!-- opcional -->
+  </nav>
 
-    <div class="content">
-        <div class="sidebar">
-            <h2>Título</h2>
-            <ul>
-                <li><a href="#">Links</a></li>
-            </ul>
-        </div>
+  <div class="content">
 
-        <div class="main">
-            
-        </div>
+    <!-- SIDEBAR COM LINKS PARA OUTROS SITES -->
+    <aside class="sidebar" aria-labelledby="menu-titulo">
+      <nav>
+        <h2 id="menu-titulo">Outros estilos</h2>
+        <ul>
+          <li><a href="https://pt.wikipedia.org/wiki/M%C3%BAsica_lo-fi" target="_blank" rel="noopener">Lo-fi na Wikipedia</a></li>
+          <li><a href="https://www.youtube.com/@BossaNovaPlanet" target="_blank" rel="noopener">Canal BossaNovaPlanet</a></li>
+        </ul>
+      </nav>
+    </aside>
 
-        <div class="anchors">
-            <h2>Neste Artigo</h2>
-            <ul>
-                <li><a href="#">Âncoras</a></li>
-            </ul>
-        </div>
-    </div>
+    <main role="main">
+      
+      <!-- LO-FI -->
+      <section id="lofi" aria-labelledby="titulo-lofi">
+        <article>
+          <h1 id="titulo-lofi">Lo-fi: Música para relaxar e focar</h1>
+          <p>O estilo Lo-fi é conhecido por suas batidas suaves, uso intencional de ruídos, imperfeições e ambientações nostálgicas.</p>
 
-    <div class="footer">
+          <blockquote cite="https://pt.wikipedia.org/wiki/M%C3%BAsica_lo-fi">
+            “Lo-fi é uma abreviação de 'low fidelity', um tipo de gravação onde imperfeições do som são percebidas como esteticamente agradáveis.”
+          </blockquote>
 
-    </div>
+          <figure>
+            <iframe 
+              width="560" 
+              height="315" 
+              src="https://www.youtube.com/embed/Is8yjLcpiRo?si=RQ3ySAEaJTzvA7_B" 
+              title="Lo-fi Beats - YouTube Video Player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen>
+            </iframe>
+            <figcaption>Assista: exemplo de música Lo-fi relaxante do canal BossaNovaPlanet.</figcaption>
+          </figure>
+
+          <p>
+            🎵 Ouça um exemplo de música Lo-fi:  
+            <a href="https://www.youtube.com/watch?v=OtRXkKOwLa8" target="_blank" rel="noopener">
+              BossaNovaPlanet - Sunset Chill
+            </a>
+          </p>
+
+          <p><a href="#topo">⬆️ Voltar ao topo</a></p>
+        </article>
+      </section>
+
+      <!-- CHILLHOP -->
+      <section id="chillhop" aria-labelledby="titulo-chillhop">
+        <article>
+          <h2 id="titulo-chillhop">Chillhop: Suavidade com estilo</h2>
+          <p>Chillhop mistura elementos de hip-hop com batidas suaves e melódicas, sendo ideal para estudos, vlogs ou relaxamento criativo.</p>
+
+          <p><a href="#topo">⬆️ Voltar ao topo</a></p>
+        </article>
+      </section>
+
+      <!-- JAZZ BEATS -->
+      <section id="jazz" aria-labelledby="titulo-jazz">
+        <article>
+          <h2 id="titulo-jazz">Jazz Beats: Sofisticação e ritmo</h2>
+          <p>Jazz Beats combina o charme clássico do jazz com batidas eletrônicas modernas, proporcionando uma experiência sonora elegante e relaxante.</p>
+
+          <p><a href="#topo">⬆️ Voltar ao topo</a></p>
+        </article>
+      </section>
+      
+    </main>
+
+    <!-- Âncoras rápidas -->
+    <aside class="anchors" aria-labelledby="ancoras-titulo">
+      <nav>
+        <h2 id="ancoras-titulo">Neste artigo</h2>
+        <ul>
+          <li><a href="#lofi">Lo-fi</a></li>
+          <li><a href="#chillhop">Chillhop</a></li>
+          <li><a href="#jazz">Jazz Beats</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+  </div>
+
+  <footer role="contentinfo">
+    <p>
+      &copy; 2025 - Projeto educacional inspirado na Wikipedia<br>
+      Criado por 
+      <a href="https://github.com/Danielferrazdev" target="_blank" rel="noopener" class="github-link">
+        Daniel Ferraz
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" 
+             alt="GitHub" 
+             width="16" 
+             height="16" 
+             style="vertical-align: middle; margin-left: 4px;">
+      </a>
+    </p>
+  </footer>
+  
+
 </body>
 </html>
